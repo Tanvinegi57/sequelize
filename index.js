@@ -10,7 +10,8 @@ var userCtrl = require("./Controllers/userController");
 const port = 8083;
 
 app.get("/", (req, res) => {
-  res.send("Home Page");
+  res.send("home Page");
+  console.log("tanvi");
 });
 app.post("/addUser", userCtrl.addUser); //insert user
 
